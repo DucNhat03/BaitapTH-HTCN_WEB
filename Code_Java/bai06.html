@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai06</title>
+    <style>
+        #b02{
+            color: rgb(196, 42, 42);
+        }
+        #row01{
+            color: black;
+        }
+        #cellpadding{
+            padding-right: 50%;
+            margin-top: 30%;
+            text-align: center;
+        }
+        #spanning{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Câu 6a-->
+    <div id="b01">
+        <table border="5" height="300px" width="300px" bgcolor="f2e19f"
+        cellspacing="3" cellpadding="5" align="center">
+            <tr>
+                <td bgcolor="white">1</td>
+                <td colspan="4" bgcolor="white">2</td>
+    
+            </tr>
+            <tr>
+                <td rowspan="3" bgcolor="white">3</td>
+                <td bgcolor="orange">4</td>
+                <td bgcolor="orange">5</td>
+                <td colspan="2" bgcolor="yellow" rowspan="2" >6</td>
+            </tr>
+            <tr>
+                <td bgcolor="orange">7</td>
+                <td bgcolor="orange">8</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="yellow">9</td>
+                <td colspan="2" bgcolor="yellow">10</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!--Câu 6b-->
+    <div id="b02">
+       <table border="5" height="700px" width="300px" 
+        cellspacing="2" cellpadding="3" 
+        align="left" bgcolor="e8c22c"
+       >
+        <tr id="row01">
+            <td>(1)</td>
+            <td>(2)</td>
+            <td>(3)</td>
+            <td colspan="3">(4)</td>
+            <td>(5)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5"><u>Part I</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"><u>Chapter 1</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section A</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section B</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"><u>Chapter 2</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5"><u>Part II</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"><u>Chapter 3</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section A</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section B</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="4"><u>Chapter 4</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section A</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td colspan="3"><u>Section B</u></td>
+            <td></td>
+        </tr>
+       </table>
+    </div>
+    <!--With cellpadding-->
+    <div id="cellpadding">
+        <table border="2" height="150px" width="150px" 
+        align="center" 
+        <caption align="top"><b>With cellpadding: </b></caption>
+            <tr>
+                <td>6.740</td>
+                <td>6.740</td>
+            </tr>
+            <tr>
+                <td>6.740</td>
+                <td>6.740</td>
+            </tr>
+        </table>
+    </div>
+    <!--Table with spanning row:-->
+    <div id="spanning">
+        <table border="2" height="150px" width="150px" 
+        align="center" 
+        <caption align="top"><b>Table with spanning row: </b></caption>
+            <tr>
+                <td>6.740</td>
+                <td>6.740</td>
+            </tr>
+            <tr>
+                <td rowspan="2">6.740</td>
+                <td>6.740</td>
+            </tr>
+            <tr>
+                <td>6.740</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
