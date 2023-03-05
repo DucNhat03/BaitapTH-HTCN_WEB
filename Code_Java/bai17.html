@@ -10,6 +10,21 @@
         width: 650px;
         height: 850px; 
         background-color: #f4c277;
+        border: 2px solid rgb(161, 159, 157);
+        box-shadow: 2px 2px 2px 5px rgb(226, 219, 219);
+        position: relative;
+        left: 400px;
+    }
+    #box2{
+        width: 500px;
+        height: fit-content; 
+        background-color: #ffffff;
+        font-size: 20px;
+        border: 2px solid #ebeaea;
+        box-shadow: 2px 2px 2px 5px rgb(179, 173, 173);
+        position: relative;
+        left: 400px;
+        top: 100px;
     }
     </style>
 </head>
@@ -139,6 +154,88 @@ State/Zip:
     </div>
 
     <!--Bài 17b-->
+    <div id="box2" >
+        
+        <form action="" method="post">
+            <p>
+                <label for="slBrow">Browser:</label>
+                <select name="" id="slBrow" style="width: 170px;">
+                    <option value=""></option>
+                </select>
+            </p>
     
+            <p>
+                <label for="txtUserName">Username:</label>
+                <input type="text" id="txtUserName" size="">
+            </p>
+    
+            <p>
+                <label for="slEncry">Encryption:</label>
+                <select name="" id="slEncry" style="width: 150px;">
+                    <option value="">2048 (High Grade)</option>
+                </select><br>
+                <span id="range-start">0</span>
+                <input type="range" min="0" max="100" value="50" id="slider-vertical">
+                
+                <span id="range-end">100</span>
+            </p>
+    
+            <p>
+                <input type="text" value="50">
+            </p>
+    
+            <p>
+                <label for="">Birthday:</label>
+                <input type="date">
+            </p>
+    
+            <p>
+                <label for="">Select your farvorite color:</label>
+                <input type="color">
+            </p>
+    
+            <p>
+                <label for="">Birthday (month and year:)</label>
+                <input type="month">
+            </p>
+    
+            <p>
+                <label for="">Select a week:</label>
+                <input type="week">
+            </p>
+    
+            <p>
+                <label for="">Select a time:</label>
+                <input type="time">
+            </p>
+    
+            <p>
+                <label for="">Birthday (date and time):</label>
+                <input type="text">
+            </p>
+    
+            <p>
+                <label for="">E-mail:</label>
+                <input type="text">
+            </p>
+    
+            <p>
+                <label for="">Search Google:</label>
+                <input type="text">
+            </p>
+    
+            <p>
+                <label for="">Telephone:</label>
+                <input type="text">
+            </p>
+    
+            <p>
+                <label for="">Add your homepage:</label>
+                <input type="text">
+            </p>
+    
+            <input type="submit">
+        </form>
+    </div>
 </body>
 </html>
