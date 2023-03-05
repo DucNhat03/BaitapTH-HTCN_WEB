@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai17</title>
+    <style>
+    #box1{
+        width: 650px;
+        height: 850px; 
+        background-color: #f4c277;
+    }
+    </style>
+</head>
+<body>
+    <!--Bài 17a-->
+    <div id="box1">
+        <h2 style=" text-align: center;">Survey Form</h2>
+        <p>If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department. Answering any question is optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+        <ol type="1">
+            <li>What is your name?</li>
+            <input type="text" style="width: 200pt;"/>
+            <p></p>
+            <li>What is your date of birth?</li>
+                <form action="" method="get" name=" frmInfo">   
+                   
+                    <label for="month" id="label-month">Month:</label>
+                    <select name="month" id="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+
+                    <label for="date" id="label-date">Date:</label>
+                    <select name="date" id="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>  
+                        <option value="3">3</option>
+                        <option value="4">4</option> 
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="12">12</option>  
+                        <option value="13">13</option>
+                        <option value="14">14</option> 
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>  
+                        <option value="23">23</option>
+                        <option value="24">24</option> 
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                     <label for="Year" id="label-date">Year:</label>
+                     <input type="text" name="txtName" value="" size="2" maxlength="5" placeholder="19"> 
+                    </form> 
+                    <br>                
+            <li>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</li>
+            <textarea rows="5" cols="40">
+Number/P.0. Box/Route: 
+Street/Avenue/Road
+City:
+State/Zip:
+             </textarea>
+            <li>What is your email address? </li>
+            <input type="text" style="width: 200px;"/>
+            <p></p>
+
+            <li>Have you viewed our online product catalog?</li>
+            <form>
+                <input checked="checked" name="YN" type="radio" value="Y" />Yes
+                <input name="YN" type="radio" value="N" />No
+            </form>
+            <p></p>
+
+            <li>If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)</li>
+            <label for="">
+                <input type="checkbox" name="inp">VCR</input>
+            </label>
+            <br>
+
+            <label for="">
+                <input type="checkbox" name="inp">Big Screen TV</input>
+            </label>
+            <br>
+            <label for="">
+                <input type="checkbox" name="inp">Audio Equipment</input>
+            </label>
+            <br>
+
+            <label for="">
+                <input type="checkbox" name="inp">Video Equipment</input>
+            </label>           
+            <br>
+            <label for="">
+                <input type="checkbox" name="inp">Camera Equipment</input>
+            </label>
+            <br>
+            <label for="">
+                <input checked ="checked" type="checkbox" name="inp" >Other</input>
+            </label>
+            
+            <input type="text" name="txtName" value="" size="30" maxlength="30" placeholder="Please List"> 
+            <br>
+            <br>
+            <li>Do you have any questions, comments or suggestions before proceeding to the Order Form?</li>    
+            <textarea rows="5" cols="40" name="comment" id="comment">Your input: </textarea>
+            <br>
+        </ol>
+
+        <div style="text-align: center;">
+            <button>Send Form</button>
+            <button>Clear Form</button>
+        </div>
+    </div>
+
+    <!--Bài 17b-->
+    
+</body>
+</html>
