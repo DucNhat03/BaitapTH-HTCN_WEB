@@ -1,0 +1,45 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: thin #000099 dashed
+}
+
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 9px;
+    font-style: italic;
+    color:
+        #CC0000;
+    text-decoration: blink
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FF3399
+}
+
+h4 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color:
+        #FFFF00
+}
+
+h5 {
+    font-family: "Courier New", Courier, mono;
+    font-size: 24px;
+    font-style: italic;
+    color: #009999
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: lighter;
+    color: #009900
+}
