@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="bai11.css">
     <title>bai11</title>
+    <style>
+      #tt1 {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 5px ridge rgb(181, 181, 181);
+    box-shadow: 2px 2px 4px 3px rgb(194, 188, 179);
+    width: 850px;
+    height: 750px;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: left;
+  }
+  .tooltip {
+    position: relative;
+}
+
+.tooltip-text {
+    background-color: rgb(237, 235, 235);
+    font-size: small;
+    visibility: hidden;
+    text-align: left;
+    position: absolute;
+    margin-top: -3px;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+    </style>
   </head>
   <body>
     
@@ -46,18 +76,6 @@
             </div>
             </p>
         </div>
-        <!-- <div>
-            <a href="https://twitter.com/?lang=vi" class="tooltip">Twitter <p class="tooltip-text">
-                href="https://twitter.com/?lang=vi title="Social Network"</p>
-            </a>
-            <span>|</span>
-            <a href="https://vi-vn.facebook.com/" class="tooltip">Facebook <p class="tooltip-text">
-                href="https://vi-vn.facebook.com/ title="Social Network"</p>
-            <span>|</span>
-            <a href="https://www.flickr.com/" class="tooltip">Flickr <p class="tooltip-text"> href="https://www.flickr.com/
-                    title="Social Network"</p>
-                </span>
-        </div> -->
       </span>
     </div>
   </body>
