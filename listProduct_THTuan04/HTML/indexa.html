@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListProduct</title>
+</head>
+<style>
+    #menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #left {
+        display: flex;
+        width: 240px;
+        justify-content: space-around;
+        position: absolute;
+        left: 152px;
+        top: 33px;
+    }
+    
+    #right {
+        display: flex;
+        width: 330px;
+        justify-content: space-around;
+        position: absolute;
+        left: 975px;
+        top: 23px;
+    }
+    
+    #center {
+        display: flex;
+        position: absolute;
+        left: 665px;
+        top: 20px;
+    }
+    
+    .leftitem {
+        color: #686E77;
+    }
+    
+    #img-container {
+        display: flex;
+        width: 1440px;
+        height: 390px;
+        position: absolute;
+        top: 70px;
+    }
+    
+    #text1 {
+        position: absolute;
+        top: 110px;
+        left: 142px;
+        font-size: 60px;
+        font-style: normal;
+        color: rgb(56, 56, 56);
+    }
+    
+    #text2 {
+        position: absolute;
+        top: 240px;
+        left: 142px;
+        font-size: 20px;
+        color: rgb(66, 66, 66);
+    }
+</style>
+
+
+<body>
+    <div id="menu-container">
+        <div id="left">
+            <div class="leftitem">Shop</div>
+            <div class="leftitem">Offer</div>
+            <div class="leftitem">Story</div>
+            <div class="leftitem">Blog</div>
+        </div>
+        <div id="center">
+            <img src="logo.png" alt="">
+        </div>
+        <div id="right">
+            <div class="rightitem">
+                <input type="text" style="width: 200px; height: 35px; border: 0.0005px solid #ac9f92;border-radius: 5px; text-align: center;" placeholder="Search product...">
+
+            </div>
+            <div class="rightitem"> <img src="cart-icon.png" alt=""></div>
+            <div class="rightitem"><img src="people-icon.png" alt=""></div>
+
+        </div>
+    </div>
+
+    <div id="img-container">
+        <div id="image1"></div>
+        <div>
+            <img src="img01.png" alt="" style="width: 1440px;height: 390px;">
+        </div>
+    </div>
+    <div id="text1">
+        <p><b>Gift for your skin</b> </p>
+    </div>
+    <div id="text2">
+        <p>Aliquip fugiat ipsum nostrud ex et eu incididunt <br>quis minim dolore excepteur voluptate</p>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
