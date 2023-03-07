@@ -1,112 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ListProduct</title>
-</head>
-<style>
+  </head>
+  <style>
     #menu-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    #left {
+      display: flex;
+      width: 250px;
+      justify-content: space-around;
+    }
+
+    #right {
+      display: flex;
+      width: 350px;
+      justify-content: left;
+      align-items: center;
+      padding-right: 0px;
+    }
+
+    #center {
+      padding-left: 50px;
+      margin-top: 11px;
+    }
+
+    #background {
+      background-image: url("../Images/img01.png");
+      width: 1450px;
+      height: 390px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    #searchbox {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 32px;
+      width: 400px;
+      border: 1px solid #c3c6ce;
+      border-radius: 5px;
+    }
+    .leftitem {
+      color: #989ca3;
+    }
+
+    .rightitem {
+      color: #989ca3;
+    }
+    #title {
+      position: relative;
+      left: 140px;
+      top: 60px;
+      color: #4f5157;
+    }
+    #title-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 65px;
+    }
+    #left-02{
+        display: flex;
+        justify-content: space-around;
+        width: 472px;
+        position: absolute;
+        left: 142px;
+    }
+    #right-02{
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        position: absolute;
+        right: 220px;
+    }
+    #allproduct{
+        display: flex;
+        border: 1px solid  #459D7A;
+        width: 180px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        background-color: #459D7A;
+        border-radius: 5px;
+    }
+    #face{
+        display: flex;
+        border: 1px solid  #ffffff;
+        width: 180px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+    #body{
+        display: flex;
+        border: 1px solid  #ffffff;
+        width: 180px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+    #sort-by{
+        display: flex;
+        border: 1px solid  #F3F4F6;
+        width: 135px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        background-color: #F3F4F6;
+        border-radius: 5px;
+        color: #7b7575;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #searchbox-2{
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-    
-    #left {
-        display: flex;
+        border-bottom: 2px solid #c3c6ce;
+        height: 52px;
         width: 240px;
-        justify-content: space-around;
-        position: absolute;
-        left: 152px;
-        top: 33px;
     }
-    
-    #right {
-        display: flex;
-        width: 330px;
-        justify-content: space-around;
-        position: absolute;
-        left: 975px;
-        top: 23px;
-    }
-    
-    #center {
-        display: flex;
-        position: absolute;
-        left: 665px;
-        top: 20px;
-    }
-    
-    .leftitem {
-        color: #686E77;
-    }
-    
-    #img-container {
-        display: flex;
-        width: 1440px;
-        height: 390px;
-        position: absolute;
-        top: 70px;
-    }
-    
-    #text1 {
-        position: absolute;
-        top: 110px;
-        left: 142px;
-        font-size: 60px;
-        font-style: normal;
-        color: rgb(56, 56, 56);
-    }
-    
-    #text2 {
-        position: absolute;
-        top: 240px;
-        left: 142px;
-        font-size: 20px;
-        color: rgb(66, 66, 66);
-    }
-</style>
+  </style>
 
-
-<body>
+  <body>
     <div id="menu-container">
-        <div id="left">
-            <div class="leftitem">Shop</div>
-            <div class="leftitem">Offer</div>
-            <div class="leftitem">Story</div>
-            <div class="leftitem">Blog</div>
+      <div id="left">
+        <div class="leftitem">Shop</div>
+        <div class="leftitem">Offers</div>
+        <div class="leftitem">Our story</div>
+        <div class="leftitem">Blog</div>
+      </div>
+      <div id="center">
+        <img src="../Images/logo.png" alt="" />
+      </div>
+      <div id="right">
+        <div id="searchbox">
+          <!--fa-solid fa-magnifying-glass : icon kinh lup-->
+          <i class='fa-solid fa-magnifying-glass' style='color:#000000'></i>
+          <input
+            type="text"
+            size="20px"
+            placeholder="Search product..."
+            style="border-style: hidden"
+          />
         </div>
-        <div id="center">
-            <img src="logo.png" alt="">
+        <div class="rightitem">
+          <a><img src="../Images/cart-icon.png" alt="" /></a>
         </div>
-        <div id="right">
-            <div class="rightitem">
-                <input type="text" style="width: 200px; height: 35px; border: 0.0005px solid #ac9f92;border-radius: 5px; text-align: center;" placeholder="Search product...">
-
-            </div>
-            <div class="rightitem"> <img src="cart-icon.png" alt=""></div>
-            <div class="rightitem"><img src="people-icon.png" alt=""></div>
-
+        <div class="rightitem">
+          <a><img src="../Images/people-icon.png" alt="" /></a>
         </div>
+      </div>
+    </div>
+    <div id="background">
+      <div id="title">
+        <h1 style="font-size: 60px; margin-bottom: 0">Gift for your skin</h1>
+        <p style="font-size: 24px; color: #727376; margin-top: 10px">
+          Aliquip fugiat ipsum nostrud ex et eu icididunt <br />
+          quis minim dolore excepteur voluptate
+        </p>
+      </div>
     </div>
 
-    <div id="img-container">
-        <div id="image1"></div>
-        <div>
-            <img src="img01.png" alt="" style="width: 1440px;height: 390px;">
+    <div id="title-container">
+        <div id="left-02">
+            <div id="allproduct" style="color: aliceblue;font-size: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">All Product</div>
+            <div id="face" style="color: #69B094;font-size: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Face</div>
+            <div id="body" style="color: #69B094;font-size: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Body</div>
         </div>
-    </div>
-    <div id="text1">
-        <p><b>Gift for your skin</b> </p>
-    </div>
-    <div id="text2">
-        <p>Aliquip fugiat ipsum nostrud ex et eu incididunt <br>quis minim dolore excepteur voluptate</p>
+        <div id="right-02">
+            <div id="searchbox-2"><input type="text" placeholder="Search product..." style="border-style: hidden;font-size: 20px;text-align: center;font-family: Arial, Helvetica, sans-serif;"></div>
+            <div id="sort-by">Sort by</div>
+        </div>
+        
     </div>
 
-
-    </div>
-</body>
-
+  </body>
 </html>
