@@ -121,7 +121,7 @@
     }
     #sort-by{
         display: flex;
-        background-color: #F3F4F6;
+        background-color: #f1f6ff;
         border-radius: 3px;
         width: 135px;
         height: 52px;
@@ -229,6 +229,23 @@
       left: 589px;
       top: 52px
     }
+    .grid-container-02{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      background-color: #1D2128;
+      width: 1440px;
+      height: 435px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top: 158px;
+      margin-left: 2px;
+    }
+    .grid-item-02{
+      padding: 20px;
+      font-size: 30px;
+      /* border: 1px solid rgb(255, 255, 255); */
+      color: white;
+    }
+
   </style>
 
   <body>
@@ -271,7 +288,7 @@
         <div id="left-02">
             <div class="allproduct"> 
               <button style="font-size: 18px;font-family: Verdana, Geneva, Tahoma, sans-serif;
-                background-color: #459D7A;border-style: hidden;color: #ffffff">All Products
+                background-color: #459D7A;border-style: hidden;color: #e6e6e6">All Products
               </button>
             </div>
             <div class="face">
@@ -467,16 +484,76 @@
       </div>
   </div>
   <div id="center-bottom">
-    <img src="../Images/left-icon.png" alt="">
-    <button style="height: 17px; width: 15px; font-size: 14px;color: rgb(156, 150, 150);
-     background-color: white;border-radius: 20px;border-style: hidden">1</button>
-    <button style="height: 17px; width: 15px; font-size: 14px; color: rgb(82, 191, 131);
-    background-color: #ffffff; border-radius: 20px;border-style: hidden">2</button>
-    <button style="height: 17px; width: 15px; font-size: 14px;color: rgb(156, 150, 150);
-     background-color: white;border-radius: 20px;border-style: hidden">3</button>
-    <button style="height: 17px; width: 15px; font-size: 14px;color: rgb(156, 150, 150);
-     background-color: white;border-radius: 20px;border-style: hidden">4</button>
-    <img src="../Images/right-icon.png" alt="">
-</div>
-  </body>
+      <img src="../Images/left-icon.png" alt="">
+      <button style="height: 17px; width: 15px; font-size: 14px;color: rgb(156, 150, 150);
+      background-color: white;border-radius: 20px;border-style: hidden">1</button>
+      <button style="height: 17px; width: 15px; font-size: 14px; color: rgb(82, 191, 131);
+      background-color: #ffffff; border-radius: 20px;border-style: hidden">2</button>
+      <button style="height: 17px; width: 15px; font-size: 14px;color: rgb(156, 150, 150);
+      background-color: white;border-radius: 20px;border-style: hidden">3</button>
+      <button style="height: 17px; width: 15px; font-size: 14px;color: rgb(156, 150, 150);
+      background-color: white;border-radius: 20px;border-style: hidden">4</button>
+      <img src="../Images/right-icon.png" alt="">
+  </div>
+
+  <div class="grid-container-02">
+      <div class="grid-item-02">
+            <div style="text-align: left;border: 1px solid #1D2128;
+            width: 138px;font-size: 16px;color: #ffffffd0;
+            margin-top: 50px;margin-left: 109px;font-family: Arial, Helvetica, sans-serif;">
+              <h2>About</h2>             
+              <p>Home</p>
+              <p>Shop</p>
+              <p>Our story</p>
+              <p>Blogs</p>
+              <div>
+                <form>
+                  <label for="choose">
+                    <select id="choose" name="choose" style="width: 128px;height: 36px;
+                        border-radius: 5px;background-color: #1D2128;color: white; border: 1px solid white;">
+                      <option value="Enghlish">Enghlish</option>
+                      <option value="Vietnamese">Vietnamese</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+      </div>
+      <div class="grid-item-02">
+        <div style="text-align: left;border: 1px solid #1D2128;
+            width: 138px;font-size: 16px;color: #ffffffd0;position: absolute;
+            margin-top: 50px;margin-left: -73px;font-family: Arial, Helvetica, sans-serif;">
+              <h2>Help</h2>             
+              <p>Shipping & Returns</p>
+              <p>Track Order</p>
+              <p>FAQs</p>
+        </div>
+      </div>
+      <div class="grid-item-02">
+        <div style="text-align: left;border: 1px solid #1D2128;
+        width: 138px;font-size: 16px;color: #ffffffd0;position: absolute;
+        margin-top: 50px;margin-left: -245px;font-family: Arial, Helvetica, sans-serif;">
+          <h2>Contact</h2>             
+          <p>Phone:</p>
+          <p>(+1) 123 456 7893</p>
+          <p>Email:</p>
+          <p>name@gmail.com</p>
+    </div>
+      </div>
+      <div class="grid-item-02">
+        <div style="text-align: left;border: 1px solid #ffffff;
+        width: 429px;font-size: 16px;color: #ffffffd0;position: absolute;
+        margin-top: 50px;margin-left: -245px;font-family: Arial, Helvetica, sans-serif;">
+          <h2>Receive new promotions</h2>             
+          <p>Duis ea tempor commodo amet reprehende</p>
+          <p>(+1) 123 456 7893</p>
+          <p><img src="../Images/Twitter-icon.png" alt="Twitter-icon">
+             <img src="../Images/facebook-icon.png" alt="Facebook-icon">
+             <img src="../Images/LinkedIn-icon.png" alt="LinkedIn-icon">
+             <img src="../Images/YouTube-icon.png" alt="YouTube-icon">
+          </p>
+          <p>20222 Brand, Inc. Privacy Terms Sitemap</p>
+    </div>
+
+</body>
 </html>
