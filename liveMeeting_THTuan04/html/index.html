@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LiveMeeting</title>
     <style>
         #wrapper {
             display: flex;
@@ -58,6 +58,21 @@
         #setting {
             margin-top: 36px;
         }
+        
+        .center-tittle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .center-endmeeting {
+            width: 490px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-top: 705px;
+            margin-left: 172px;
+        }
     </style>
 </head>
 
@@ -68,22 +83,67 @@
                 <div id="left_above">
                     <img class="item" src="../image/logo.png" alt="">
                     <img class="item" src="../image/home.png" alt="">
-                    <img class="item" src="../image/cam.png" alt="">
                     <img class="item" src="../image/chatting.png" alt="">
+                    <img class="item" src="../image/calender.png" alt="">
+                    <img class="item" src="../image/cam_color.png" alt="">
                     <img class="item" src="../image/user.png" alt="">
                 </div>
-
                 <div id="below">
                     <img src="../image/avatar.png" width="44" alt="">
                     <img id="setting" src="../image/setting.png" width="44" alt="">
                 </div>
             </div>
-            <div id="center">center</div>
-            <div id="right">right</div>
-
+            <div id="center">
+                <div class="center-tittle">
+                    <h2>Meeting tittle</h2>
+                    <button style="border-radius: 5px;border: 1px solid red; width: 93px;height: 38px;font-size: 15px;color: red;border-radius: 20px;"><span>12:00</span></button>
+                </div>
+                <div class="center-date-time">
+                    <button style="border: 1px solid #E34D73;background-color: #E34D73;
+                        font-size: 20px;color: white;font-family: 'Times New Roman', Times, serif;
+                        border-radius: 15px;width: 80px;height: 30px;
+                        font-size: 13px;text-align: center;">
+                        Internal
+                    </button>
+                    <button style="width: 250px;height: 30px;position: absolute;background-color: bisque;border-style: none;">
+                        <img src="../image/calender_small.png" alt="" style="background-repeat: no-repeat;margin-top: 3px;">
+                        <span>Sep 02, 2022</span> &ensp;<span>|</span>&ensp;<span>08:00-09:00 AM</span>
+                    </button>
+                    <div class="center-img-big">
+                        <img src="../image/img_big.png" alt="" style="width: 830px; height: 457px;position: absolute; margin-top: 35px;border-radius: 10px;">
+                    </div>
+                    <div class="center-3img" style="display: flex;position: absolute;margin-top: 520px;width: 830px;justify-content: space-between;">
+                        <div> <img src="../image/img2.png" alt="" style="border-radius: 10px;height: 160px;"></div>
+                        <div> <img src="../image/img1.png" alt="" style="border-radius: 10px;height: 160px;"></div>
+                        <div><img src="../image/img.png" alt="" style="border-radius: 10px;height: 160px;"></div>
+                    </div>
+                    <div class="center-endmeeting">
+                        <div> <img src="../image/mic_grey_color.png" alt="mic_gray_button"></div>
+                        <div> <img src="../image/cam_color.png" alt="cam_gray_button"></div>
+                        <div><img src="../image/speaker_grey_color.png" alt="speaker_grey_color"></div>
+                        <div><button style="width: 128px;height: 45px;background-color: #F22128;text-align: center;border: #F22128;border-radius: 5px;color: white;font-size: 16px;">End meeting</button></div>
+                        <div> <img src="../image/phanchieu.png" alt="phanchieu_button"> </div>
+                        <div> <img src="../image/share.png" alt="share_icon"></div>
+                        <div><img src="../image/3cham-button.png" alt="..._icon"></div>
+                    </div>
+                </div>
+            </div>
+            <!--RIGHT-->
+            <div id="right">
+                <div id="right-title" style="display: flex;justify-content: space-between;align-items: center;">
+                    <h2>Participants</h2>
+                    <button style="border-radius: 5px;border: 1px solid red; width: 70px;height: 37px;font-size: 15px;color: red;"><span>+ Add</span></button>
+                </div>
+                <div id="right-4-line">
+                    <div class="right-benjamin">
+                        <img src="../image/avt_benjamin.png" alt="">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
-
-
     </div>
 
 </body>
