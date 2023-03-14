@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+            background-color: bisque;
+        }
+        
+        #right {
+            width: 440px;
+            background-color: aqua;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="../image/logo.png" alt="">
+                    <img class="item" src="../image/home.png" alt="">
+                    <img class="item" src="../image/cam.png" alt="">
+                    <img class="item" src="../image/chatting.png" alt="">
+                    <img class="item" src="../image/user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="../image/avatar.png" width="44" alt="">
+                    <img id="setting" src="../image/setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">center</div>
+            <div id="right">right</div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
