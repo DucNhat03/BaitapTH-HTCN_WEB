@@ -21,6 +21,7 @@
         #center {
             width: 910px;
             background-color: bisque;
+            margin-left: 32px;
         }
         
         #right {
@@ -37,17 +38,26 @@
         }
         
         #left_above {
-            width: 100%;
+            width: 60px;
+            height: fit-content;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items:  center;
+            justify-content: space-between;
+            border: 1px solid black;
+            margin-top: -30px;
+            margin-left: 10px;
         }
         
         #below {
+            border: 1px solid black;
+            width: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-top: -30px;
+            margin-left: 10px;
         }
         
         .item {
@@ -63,6 +73,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 20px;
         }
         
         .center-endmeeting {
@@ -70,8 +81,25 @@
             display: flex;
             justify-content: space-between;
             position: absolute;
-            margin-top: 705px;
+            margin-top: 695px;
             margin-left: 172px;
+        }
+        .center-date-time{
+            margin-top: 10px;
+            border: 1px solid black;
+            text-align: left;
+            width: 345px;
+        }
+        #right-4-line{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-between;
+            border: 1px solid red;
+            height: 196px;
+            width: 185px;
+            margin-left: 13px;
+            margin-top: 17px;
         }
     </style>
 </head>
@@ -79,13 +107,14 @@
 <body>
     <div id="wrapper">
         <div id="container">
+            <!--LEFT-->
             <div id="left">
                 <div id="left_above">
-                    <img class="item" src="../image/logo.png" alt="">
+                    <img class="item" src="../image/logo.png" alt="" style="width: 55px;height: 50px;">
                     <img class="item" src="../image/home.png" alt="">
                     <img class="item" src="../image/chatting.png" alt="">
                     <img class="item" src="../image/calender.png" alt="">
-                    <img class="item" src="../image/cam_color.png" alt="">
+                    <img class="item" src="../image/cam_color.png" alt="" style="width: 55px;height: 50px;">
                     <img class="item" src="../image/user.png" alt="">
                 </div>
                 <div id="below">
@@ -95,8 +124,10 @@
             </div>
             <div id="center">
                 <div class="center-tittle">
-                    <h2>Meeting tittle</h2>
-                    <button style="border-radius: 5px;border: 1px solid red; width: 93px;height: 38px;font-size: 15px;color: red;border-radius: 20px;"><span>12:00</span></button>
+                    <h2 style="font-family: Arial, Helvetica, sans-serif;">Meeting tittle</h2>
+                    <button style="border-radius: 5px;border: 1px solid red; margin-right: 59px;
+                        width: 93px;height: 38px;font-size: 15px;color: red;border-radius: 20px; display: flex;align-items: center;text-align: center;"><span style="font-size: 40px">&nbsp;&#8226;&nbsp;</span>12:00
+                    </button>
                 </div>
                 <div class="center-date-time">
                     <button style="border: 1px solid #E34D73;background-color: #E34D73;
@@ -106,13 +137,17 @@
                         Internal
                     </button>
                     <button style="width: 250px;height: 30px;position: absolute;background-color: bisque;border-style: none;">
-                        <img src="../image/calender_small.png" alt="" style="background-repeat: no-repeat;margin-top: 3px;">
-                        <span>Sep 02, 2022</span> &ensp;<span>|</span>&ensp;<span>08:00-09:00 AM</span>
+                        <img src="../image/calender_small.png" alt="" style="background-repeat: no-repeat;margin-top: 5px;width: 20px;height: 20px;">&ensp;Sep 02, 2022 &ensp;|&ensp;08:00-09:00 AM
                     </button>
                     <div class="center-img-big">
-                        <img src="../image/img_big.png" alt="" style="width: 830px; height: 457px;position: absolute; margin-top: 35px;border-radius: 10px;">
+                        <img src="../image/img_big.png" alt="" style="width: 830px; height: 457px;position: absolute; margin-top: 32px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div style="border: 1px solid #757679;width: 158px;height: 38px;border-radius: 5px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        position: absolute;top: 185px;left: 184px;background-color: #757679;
+                        color: #F1F1F1;display: flex;
+                        justify-content: center;align-items: center;"><span style="font-size: 30px; color: #1DD75B;">&nbsp;&#8226;&nbsp;</span>Benjamin Crawford</div>
+                        <div><img src="../image/mic_color.png" alt="mic_color" style="position: absolute;margin-top: 50px;margin-left: 770px;width: 37px;height: 37px;"></div>
                     </div>
-                    <div class="center-3img" style="display: flex;position: absolute;margin-top: 520px;width: 830px;justify-content: space-between;">
+                    <div class="center-3img" style="display: flex;position: absolute;margin-top: 513px;width: 830px;justify-content: space-between;">
                         <div> <img src="../image/img2.png" alt="" style="border-radius: 10px;height: 160px;"></div>
                         <div> <img src="../image/img1.png" alt="" style="border-radius: 10px;height: 160px;"></div>
                         <div><img src="../image/img.png" alt="" style="border-radius: 10px;height: 160px;"></div>
@@ -121,7 +156,7 @@
                         <div> <img src="../image/mic_grey_color.png" alt="mic_gray_button"></div>
                         <div> <img src="../image/cam_color.png" alt="cam_gray_button"></div>
                         <div><img src="../image/speaker_grey_color.png" alt="speaker_grey_color"></div>
-                        <div><button style="width: 128px;height: 45px;background-color: #F22128;text-align: center;border: #F22128;border-radius: 5px;color: white;font-size: 16px;">End meeting</button></div>
+                        <div><button style="width: 128px;height: 45px;background-color: #F22128;text-align: center;border: #F22128;border-radius: 5px;color: white;font-size: 16px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">End meeting</button></div>
                         <div> <img src="../image/phanchieu.png" alt="phanchieu_button"> </div>
                         <div> <img src="../image/share.png" alt="share_icon"></div>
                         <div><img src="../image/3cham-button.png" alt="..._icon"></div>
@@ -131,16 +166,26 @@
             <!--RIGHT-->
             <div id="right">
                 <div id="right-title" style="display: flex;justify-content: space-between;align-items: center;">
-                    <h2>Participants</h2>
-                    <button style="border-radius: 5px;border: 1px solid red; width: 70px;height: 37px;font-size: 15px;color: red;"><span>+ Add</span></button>
+                    <h2 style="margin-top: 40px;font-family: Arial, Helvetica, sans-serif;margin-left: 13px;">Participants</h2>
+                    <button style="border-radius: 5px;border: 1px solid red; width: 70px;height: 37px;font-size: 15px;color: red;margin-top: 18px;margin-right: 36px;"><span>+ Add</span></button>
                 </div>
                 <div id="right-4-line">
-                    <div class="right-benjamin">
-                        <img src="../image/avt_benjamin.png" alt="">
+                    <div class="right-benjamin" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <img src="../image/avt_benjamin.png" alt="avatar-Benjamin"> 
+                        <span>&nbsp;Benjamin Crawford</span>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div class="right-scott" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <img src="../image/avt_christianScott.png" alt="avatar-ChristianScott">
+                        <span>&nbsp;Christian Scott</span>
+                    </div>
+                    <div class="right-Chu" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <img src="../image/avt_DeborahChu.png" alt="avatar-DeborahChu">
+                        <span>&nbsp;Deborah Chu</span>
+                    </div>
+                    <div class="right-Nieves" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <img src="../image/avt_JordanNeives.png" alt="avatar-JordanNieves">
+                        <span>&nbsp;Jodan Nieves</span>
+                    </div>
                 </div>
             </div>
         </div>
