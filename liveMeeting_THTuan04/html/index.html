@@ -20,7 +20,7 @@
         
         #center {
             width: 910px;
-            background-color: bisque;
+            background-color: rgb(255, 255, 255);
             margin-left: 32px;
         }
         
@@ -38,19 +38,17 @@
         }
         
         #left_above {
-            width: 60px;
-            height: fit-content;
             display: flex;
+            width: 60px;
+            height: 390px;
             flex-direction: column;
             align-items:  center;
-            justify-content: space-between;
-            border: 1px solid black;
-            margin-top: -30px;
-            margin-left: 10px;
+            justify-content: space-evenly;
+            margin-top: 27px;
+            margin-left: 9px;
         }
         
         #below {
-            border: 1px solid black;
             width: 60px;
             display: flex;
             flex-direction: column;
@@ -69,6 +67,38 @@
             margin-top: 36px;
         }
         
+        .button-internal{
+            border: 1px solid #E34D73;
+            background-color: #E34D73;
+            font-size: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 15px;
+            width: 79px;
+            height: 25px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-date-time{
+            width: 275px;
+            height: 20px;
+            margin-top: -27px;
+            margin-left: 94px;
+            position: absolute;
+            border-style: none;
+        }
+        .buton-internal-icon{
+            width: 12px;
+            height: 12px;
+            background-image: url(../image/user.png);
+            background-repeat: no-repeat;
+            background-size: 10px;
+            background-position: bottom;
+            border-radius: 20px;
+            background-color: #F1F1F1;
+        }
         .center-tittle {
             display: flex;
             justify-content: space-between;
@@ -85,8 +115,8 @@
             margin-left: 172px;
         }
         .center-date-time{
-            margin-top: 10px;
-            border: 1px solid black;
+            margin-top: 8px;
+            /* border: 1px solid black; */
             text-align: left;
             width: 345px;
         }
@@ -101,6 +131,77 @@
             margin-left: 13px;
             margin-top: 17px;
         }
+        .title-img-big{
+            border: 1px solid #757679;
+            width: 158px;
+            height: 38px;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            background-color: #757679;
+            color: #F1F1F1;display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 24px;
+            margin-top: 48px;
+        }
+        .title-img01-center-bottom{
+            width: 107px;
+            height: 27px;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            background-color: #414A4B;
+            opacity: 0.8;
+            color: #F1F1F1;display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8px;
+            margin-top: -155px;
+        }
+        .title-img02-center-bottom{
+            width: 107px;
+            height: 27px;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            background-color: #6A6B6F;
+            opacity: 0.8;
+            color: #F1F1F1;display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8px;
+            margin-top: -159px;
+        }
+        .title-img03-center-bottom{
+            width: 107px;
+            height: 27px;
+            border-radius: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: absolute;
+            background-color: #6A6B6F;
+            opacity: 0.8;
+            color: #F1F1F1;display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 8px;
+            margin-top: -159px;
+        }
+        /* .mute-mic-img2{
+            border: 1px solid #F1F1F1;
+            width: 27px;
+            height: 28px;
+            border-radius: 3px;
+            position: absolute;
+            margin-top: -159px;
+            margin-left: 225px;
+            background-color: #828384;
+            background-image: url(../image/mic2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 15px 15px;
+            background-color: #F1F1F1;
+        } */
     </style>
 </head>
 
@@ -110,12 +211,12 @@
             <!--LEFT-->
             <div id="left">
                 <div id="left_above">
-                    <img class="item" src="../image/logo.png" alt="" style="width: 55px;height: 50px;">
-                    <img class="item" src="../image/home.png" alt="">
+                    <img class="item" src="../image/logo.png" alt="" style="width: 50px;height: 55px;">
+                    <img class="item" src="../image/home.png" alt="" style="margin-top: 42px;">
                     <img class="item" src="../image/chatting.png" alt="">
                     <img class="item" src="../image/calender.png" alt="">
-                    <img class="item" src="../image/cam_color.png" alt="" style="width: 55px;height: 50px;">
-                    <img class="item" src="../image/user.png" alt="">
+                    <img class="item" src="../image/cam_color.png" alt="" style="width: 57px;height: 58px;margin-top: 40px;">
+                    <img class="item" src="../image/user.png" alt="" style="margin-top: 39px;">
                 </div>
                 <div id="below">
                     <img src="../image/avatar.png" width="44" alt="">
@@ -126,37 +227,59 @@
                 <div class="center-tittle">
                     <h2 style="font-family: Arial, Helvetica, sans-serif;">Meeting tittle</h2>
                     <button style="border-radius: 5px;border: 1px solid red; margin-right: 59px;
-                        width: 93px;height: 38px;font-size: 15px;color: red;border-radius: 20px; display: flex;align-items: center;text-align: center;"><span style="font-size: 40px">&nbsp;&#8226;&nbsp;</span>12:00
+                        width: 90px;height: 38px;font-size: 15px;color: red;border-radius: 20px; display: flex;align-items: center;text-align: center;"><span style="font-size: 40px">&nbsp;&#8226;&nbsp;</span>12:00
                     </button>
                 </div>
                 <div class="center-date-time">
-                    <button style="border: 1px solid #E34D73;background-color: #E34D73;
-                        font-size: 20px;color: white;font-family: 'Times New Roman', Times, serif;
-                        border-radius: 15px;width: 80px;height: 30px;
-                        font-size: 13px;text-align: center;">
-                        Internal
-                    </button>
-                    <button style="width: 250px;height: 30px;position: absolute;background-color: bisque;border-style: none;">
-                        <img src="../image/calender_small.png" alt="" style="background-repeat: no-repeat;margin-top: 5px;width: 20px;height: 20px;">&ensp;Sep 02, 2022 &ensp;|&ensp;08:00-09:00 AM
-                    </button>
+                    <div class="button-internal"> 
+                         <div class="buton-internal-icon">&nbsp;</div> &ensp;
+                         <span style="display: flex;justify-content: center;align-items: center;justify-items: center;font-size: 12px;">Internal</span> 
+                    </div>
+                    <div class="button-date-time">
+                        <img src="../image/calender_small.png" alt="" style="background-repeat: no-repeat;margin-top: 5px;width: 17px;height: 17px;">
+                        <div style="margin-top: -20px;margin-left: 25px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 13px">
+                        <span >Sep 02, 2022</span>
+                        <span style="margin-left: 10px;font-size: 15px;color: #c8c3c4;">|</span>
+                        <span style="margin-left: 10px">08:00&nbsp;-&nbsp;09:00 AM</span> </div>
+                        
+                    </div>
                     <div class="center-img-big">
-                        <img src="../image/img_big.png" alt="" style="width: 830px; height: 457px;position: absolute; margin-top: 32px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
-                        <div style="border: 1px solid #757679;width: 158px;height: 38px;border-radius: 5px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        position: absolute;top: 185px;left: 184px;background-color: #757679;
-                        color: #F1F1F1;display: flex;
-                        justify-content: center;align-items: center;"><span style="font-size: 30px; color: #1DD75B;">&nbsp;&#8226;&nbsp;</span>Benjamin Crawford</div>
+                        <img src="../image/img_big.png" alt="" style="width: 830px; height: 457px;position: absolute; margin-top: 37px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="title-img-big" ><span style="font-size: 31px; color: #1DD75B;margin-left: 0px;">&#8226;&nbsp;</span> 
+                        <span style="font-family: 'Lucida Sans';font-size: 14px;">Benjamin Crawford</span> </div>
                         <div><img src="../image/mic_color.png" alt="mic_color" style="position: absolute;margin-top: 50px;margin-left: 770px;width: 37px;height: 37px;"></div>
                     </div>
                     <div class="center-3img" style="display: flex;position: absolute;margin-top: 513px;width: 830px;justify-content: space-between;">
-                        <div> <img src="../image/img2.png" alt="" style="border-radius: 10px;height: 160px;"></div>
-                        <div> <img src="../image/img1.png" alt="" style="border-radius: 10px;height: 160px;"></div>
-                        <div><img src="../image/img.png" alt="" style="border-radius: 10px;height: 160px;"></div>
+                        <div class="img1-center-bottom"> <img src="../image/img2.png" alt="" style="border-radius: 10px;height: 160px;">
+                            <div class="title-img01-center-bottom"><span style="font-size: 31px; color: #1DD75B;margin-left: 0px;">&#8226;&nbsp;</span> 
+                            <span style="font-family: 'Lucida Sans';font-size: 11px;">Christian Scott</span> </div>
+                            <div><img src="../image/mic_grey_color.png" alt="mic_color" 
+                                style="position: absolute;margin-top: -155px;margin-left: 225px;width: 29px;height: 29px;">
+                            </div>
+                        </div>
+                        <div img2-center-bottom> <img src="../image/img1.png" alt="" style="border-radius: 10px;height: 160px;">
+                            <div class="title-img02-center-bottom"><span style="font-size: 31px; color: #1DD75B;margin-left: 0px;">&#8226;&nbsp;</span> 
+                            <span style="font-family: 'Lucida Sans';font-size: 11px;">Deborah Chu</span> </div>
+                            <div><img src="../image/mic_grey_color.png" alt="mic_color" 
+                                style="position: absolute;margin-top: -159px;margin-left: 225px;width: 29px;height: 29px;">
+                            </div>
+                            <!-- <div class="mute-mic-img2"></div> -->
+                        </div>
+                        <div img3-center-bottom><img src="../image/img.png" alt="" style="border-radius: 10px;height: 160px;">
+                            <div class="title-img03-center-bottom"><span style="font-size: 31px; color: #1DD75B;margin-left: 0px;">&#8226;&nbsp;</span> 
+                            <span style="font-family: 'Lucida Sans';font-size: 11px;">Jordan Nieves</span> </div>
+                            <div><img src="../image/mic_grey_color.png" alt="mic_color" 
+                                style="position: absolute;margin-top: -159px;margin-left: 225px;width: 29px;height: 29px;">
+                            </div>
+                        </div>
                     </div>
                     <div class="center-endmeeting">
                         <div> <img src="../image/mic_grey_color.png" alt="mic_gray_button"></div>
                         <div> <img src="../image/cam_color.png" alt="cam_gray_button"></div>
                         <div><img src="../image/speaker_grey_color.png" alt="speaker_grey_color"></div>
-                        <div><button style="width: 128px;height: 45px;background-color: #F22128;text-align: center;border: #F22128;border-radius: 5px;color: white;font-size: 16px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">End meeting</button></div>
+                        <div><button style="width: 128px;height: 45px;background-color: #F22128;
+                        text-align: center;border: #F22128;border-radius: 5px;
+                        color: white;font-size: 16px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;">End meeting</button></div>
                         <div> <img src="../image/phanchieu.png" alt="phanchieu_button"> </div>
                         <div> <img src="../image/share.png" alt="share_icon"></div>
                         <div><img src="../image/3cham-button.png" alt="..._icon"></div>
