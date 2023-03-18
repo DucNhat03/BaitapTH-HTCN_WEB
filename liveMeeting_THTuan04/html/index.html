@@ -26,7 +26,7 @@
         
         #right {
             width: 440px;
-            background-color: aqua;
+            background-color: rgb(255, 255, 255);
         }
         
         #left {
@@ -44,7 +44,7 @@
             flex-direction: column;
             align-items:  center;
             justify-content: space-evenly;
-            margin-top: 27px;
+            margin-top: 20px;
             margin-left: 9px;
         }
         
@@ -125,9 +125,9 @@
             flex-direction: column;
             align-items: left;
             justify-content: space-between;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             height: 196px;
-            width: 185px;
+            width: 380px;
             margin-left: 13px;
             margin-top: 17px;
         }
@@ -136,10 +136,11 @@
             width: 158px;
             height: 38px;
             border-radius: 5px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
             position: absolute;
             background-color: #757679;
-            color: #F1F1F1;display: flex;
+            color: #F1F1F1;
+            display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 24px;
@@ -187,6 +188,53 @@
             margin-left: 8px;
             margin-top: -159px;
         }
+        .right-3item-row1{
+            /* border: 1px solid black; */
+            width: 75px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-left: 305px;
+            
+        }
+        .right-3item-row2{
+            width: 75px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-left: 305px;
+        }
+        .right-3item-row3{
+            width: 75px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-left: 305px;
+        }
+        .right-3item-row4{
+            width: 75px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            margin-left: 305px;
+        }
+        #right-bottom-chatbox{
+            /* border: 1px solid red; */
+            height: 550px;
+            width: 380px;
+            margin-left: 13px;
+            /* margin-top: 45px; */
+        }
+        .right-avata-item{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-between;
+            margin-top: 40px;
+            width: 380px;
+            height: 380px;
+
+        }
         /* .mute-mic-img2{
             border: 1px solid #F1F1F1;
             width: 27px;
@@ -211,23 +259,32 @@
             <!--LEFT-->
             <div id="left">
                 <div id="left_above">
-                    <img class="item" src="../image/logo.png" alt="" style="width: 50px;height: 55px;">
-                    <img class="item" src="../image/home.png" alt="" style="margin-top: 42px;">
-                    <img class="item" src="../image/chatting.png" alt="">
-                    <img class="item" src="../image/calender.png" alt="">
-                    <img class="item" src="../image/cam_color.png" alt="" style="width: 57px;height: 58px;margin-top: 40px;">
-                    <img class="item" src="../image/user.png" alt="" style="margin-top: 39px;">
+                    <img class="item" src="../image/logo.png" alt="Logo" style="width: 50px;height: 55px;">
+                    <img class="item" src="../image/home.png" alt="icon-home" style="margin-top: 42px;">
+                    <div><img class="item" src="../image/chatting.png" alt="icon-chatting">
+                        <div style="width: 14px;height: 14px;border: 2px solid rgb(255, 255, 255);
+                            border-radius: 10px;display: flex;justify-content: center;position: relative;
+                            background-color: red;margin-top: -40px;margin-left: 18px;">
+                            <span style="font-size: 10px;font-family: Verdana;font-weight: bold;color: white;">N</span></div>
+                    </div>
+                    <img class="item" src="../image/calender.png" alt="icon-calender" style="margin-top: 64px;">
+                    <img class="item" src="../image/cam_color.png" alt="icon-camera" style="width: 57px;height: 58px;margin-top: 40px;">
+                    <img class="item" src="../image/user.png" alt="icon-user" 
+                        style="margin-top: 39px;filter: drop-shadow(0.30em -0.15em 0.03em #2b2b2b);">
                 </div>
                 <div id="below">
-                    <img src="../image/avatar.png" width="44" alt="">
-                    <img id="setting" src="../image/setting.png" width="44" alt="">
+                    <img src="../image/avatar.png" width="44" alt="avata">
+                    <img id="setting" src="../image/setting.png" width="44" alt="setting" style="width: 54px;height: 54px;margin-top: 20px;">
                 </div>
             </div>
             <div id="center">
                 <div class="center-tittle">
                     <h2 style="font-family: Arial, Helvetica, sans-serif;">Meeting tittle</h2>
                     <button style="border-radius: 5px;border: 1px solid red; margin-right: 59px;
-                        width: 90px;height: 38px;font-size: 15px;color: red;border-radius: 20px; display: flex;align-items: center;text-align: center;"><span style="font-size: 40px">&nbsp;&#8226;&nbsp;</span>12:00
+                        width: 90px;height: 38px;font-size: 15px;color: red;border-radius: 20px;
+                        display: flex;align-items: center;text-align: center;background-color: white;">
+                            <span style="font-size: 40px">&nbsp;&#8226;&nbsp;
+                            </span>12:00
                     </button>
                 </div>
                 <div class="center-date-time">
@@ -237,7 +294,7 @@
                     </div>
                     <div class="button-date-time">
                         <img src="../image/calender_small.png" alt="" style="background-repeat: no-repeat;margin-top: 5px;width: 17px;height: 17px;">
-                        <div style="margin-top: -20px;margin-left: 25px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 13px">
+                        <div style="margin-top: -20px;margin-left: 25px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 14px">
                         <span >Sep 02, 2022</span>
                         <span style="margin-left: 10px;font-size: 15px;color: #c8c3c4;">|</span>
                         <span style="margin-left: 10px">08:00&nbsp;-&nbsp;09:00 AM</span> </div>
@@ -290,24 +347,99 @@
             <div id="right">
                 <div id="right-title" style="display: flex;justify-content: space-between;align-items: center;">
                     <h2 style="margin-top: 40px;font-family: Arial, Helvetica, sans-serif;margin-left: 13px;">Participants</h2>
+                    <div style="border: 1px solid #FDF2F4;width: 18px;height: 18px;
+                        text-align: center;border-radius: 10px;position: absolute;color: #E34D73;background-color: #f9e9ec;
+                        margin-top: 12px;margin-left: 154px;">4
+                    </div>
                     <button style="border-radius: 5px;border: 1px solid red; width: 70px;height: 37px;font-size: 15px;color: red;margin-top: 18px;margin-right: 36px;"><span>+ Add</span></button>
                 </div>
                 <div id="right-4-line">
-                    <div class="right-benjamin" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <div class="right-benjamin" style="display: flex;justify-content: left;align-items: center;
+                        font-size: 18px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;width: 220px;">
                         <img src="../image/avt_benjamin.png" alt="avatar-Benjamin"> 
                         <span>&nbsp;Benjamin Crawford</span>
+                        <div class="right-3item-row1">
+                            <div><img src="../image/mic1.png" alt="mic-item" style="width: 19px;height: 19px;"></div>
+                            <div><img src="../image/cam_small.png" alt="mic-item" style="width: 20px;height: 20px;"></div>
+                            <div style="width: 20px;height: 20px;display: flex;margin-top: -4px;color: #6A6B6F;
+                                justify-content: center;align-items: center;text-align: center;font-size: 18px;font-weight: bold;"><span>...</span></div>
+                        </div>
                     </div>
                     <div class="right-scott" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                         <img src="../image/avt_christianScott.png" alt="avatar-ChristianScott">
                         <span>&nbsp;Christian Scott</span>
+                        <div class="right-3item-row2">
+                            <div><img src="../image/mic1.png" alt="mic-item" style="width: 19px;height: 19px;"></div>
+                            <div><img src="../image/cam_small.png" alt="mic-item" style="width: 20px;height: 20px;"></div>
+                            <div style="width: 20px;height: 20px;display: flex;margin-top: -4px;color: #6A6B6F;
+                                justify-content: center;align-items: center;text-align: center;font-size: 18px;font-weight: bold;"><span>...</span></div>
+                        </div>
                     </div>
                     <div class="right-Chu" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                         <img src="../image/avt_DeborahChu.png" alt="avatar-DeborahChu">
                         <span>&nbsp;Deborah Chu</span>
+                        <div class="right-3item-row3">
+                            <div><img src="../image/mic2.png" alt="mic-item" style="width: 19px;height: 19px;"></div>
+                            <div><img src="../image/cam_small.png" alt="mic-item" style="width: 20px;height: 20px;"></div>
+                            <div style="width: 20px;height: 20px;display: flex;margin-top: -4px;color: #6A6B6F;
+                                justify-content: center;align-items: center;text-align: center;font-size: 18px;font-weight: bold;"><span>...</span></div>
+                        </div>
                     </div>
                     <div class="right-Nieves" style="display: flex;justify-content: left;align-items: center;font-size: 17px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                         <img src="../image/avt_JordanNeives.png" alt="avatar-JordanNieves">
                         <span>&nbsp;Jodan Nieves</span>
+                        <div class="right-3item-row4">
+                            <div><img src="../image/mic1.png" alt="mic-item" style="width: 19px;height: 19px;"></div>
+                            <div><img src="../image/cam_small.png" alt="mic-item" style="width: 20px;height: 20px;"></div>
+                            <div style="width: 20px;height: 20px;display: flex;margin-top: -4px;color: #6A6B6F;
+                                justify-content: center;align-items: center;text-align: center;font-size: 18px;font-weight: bold;"><span>...</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-bottom: 2px solid rgb(239, 238, 238);margin-top: 33px;"></div>
+                <div id="right-bottom-chatbox">
+                    <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Chat</h2>
+                    <div class="right-avata-item">
+                        <div style="display: flex;justify-content: left;align-items: center;">
+                            <img src="../image/avt1-online.png" alt="Deborah Chu-avata">
+                            <span style="margin-left: 15px;"><b>Deborah Chu</b>&ensp;<span style="font-size: 12px;color: #818586;font-family: Verdana, Geneva, Tahoma, sans-serif;">1:12 PM</span></span>
+                            <div style="width: 320px; height: 40px;
+                                position: absolute;margin-top: 110px;margin-left: 60px;font-size: 13.5px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                <span>Lorem excepteur magna voluptate exercitation <br> dolore exercitation amet</span>
+                            </div> 
+                        </div>
+                        <div style="display: flex;justify-content: left;align-items: center;">
+                            <img src="../image/avt2-online.png" alt="Jodan Nieves-avata">
+                            <span style="margin-left: 15px;"><b>Jordan Nieves</b><span style="font-size: 12px;color: #818586;font-family: Verdana, Geneva, Tahoma, sans-serif;">&ensp;1:12 PM</span></span>
+                            <div style="width: 314px; height: 40px;
+                                position: absolute;margin-top: 110px;margin-left: 63px;font-size: 13.5px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                <span>Eiusmod laborum culpa est magna cillum sint <br> in elit proident magna anim consecte</span>
+                            </div> 
+                        </div>
+                        <div style="display: flex;justify-content: left;align-items: center;">
+                            <img src="../image/avt3-online.png" alt="Benjamin Crawford-avata">
+                            <span style="margin-left: 15px;"><b>Benjamin Crawford</b><span style="font-size: 12px;color: #818586;font-family: Verdana, Geneva, Tahoma, sans-serif;">&ensp;1:12 PM</span></span>
+                            <div style="width: 100px;height: 50px;position: absolute;
+                                margin-top: 100px;margin-left: 63px;display: flex;align-items: center;justify-content: center;background-color: rgb(249, 245, 249);">
+                                <span>&#128525;&#128525;&#128525;</span>
+                            </div>
+                        </div>
+                        <div style="display: flex;justify-content: left;align-items: center;">
+                            <img src="../image/avt4-online.png" alt="Christian Scott-avata">
+                            <span style="margin-left: 15px;"><b>Christian Scott</b>
+                            <div class="chat-bottom">
+                                <input type="text" style="width: 320px;
+                                    height: 38px;position: absolute;margin-top: 20px;border-style: none;
+                                    background-color: #F3F4F6;margin-left: -50px;font-size: 17px;" placeholder="Add..">
+                                    <span style="font-size: 30px;position: absolute;margin-top: 21px;margin-left: 240px;">&#9786;</span>
+                                    <button style="width: 53px;height: 40px;position: absolute;margin-top: 20px;margin-left: 275px;
+                                        border-style: none;">
+                                        <img src="../image/send.png" alt="send-button" style="width: 40px;height: 40px;">
+                                    </button>
+        
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
