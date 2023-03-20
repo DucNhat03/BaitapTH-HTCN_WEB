@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiveMeeting</title>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <style>
         #wrapper {
             display: flex;
@@ -40,11 +41,11 @@
         #left_above {
             display: flex;
             width: 60px;
-            height: 390px;
+            height: 520px;
             flex-direction: column;
             align-items:  center;
             justify-content: space-evenly;
-            margin-top: 20px;
+            margin-top: -32px;
             margin-left: 9px;
         }
         
@@ -235,6 +236,10 @@
             height: 380px;
 
         }
+        ::placeholder{
+            opacity: 0.5;
+        }
+        
         /* .mute-mic-img2{
             border: 1px solid #F1F1F1;
             width: 27px;
@@ -249,7 +254,10 @@
             background-position: center;
             background-size: 15px 15px;
             background-color: #F1F1F1;
-        } */
+        }
+            Mic mute 
+        */
+        
     </style>
 </head>
 
@@ -259,8 +267,8 @@
             <!--LEFT-->
             <div id="left">
                 <div id="left_above">
-                    <img class="item" src="../image/logo.png" alt="Logo" style="width: 50px;height: 55px;">
-                    <img class="item" src="../image/home.png" alt="icon-home" style="margin-top: 42px;">
+                    <img class="item" src="../image/logo.png" alt="Logo" style="width: 50px;height: 55px;margin-top: 50px;">
+                    <img class="item" src="../image/home.png" alt="icon-home" style="margin-top: 30px;">
                     <div><img class="item" src="../image/chatting.png" alt="icon-chatting">
                         <div style="width: 14px;height: 14px;border: 2px solid rgb(255, 255, 255);
                             border-radius: 10px;display: flex;justify-content: center;position: relative;
@@ -268,9 +276,12 @@
                             <span style="font-size: 10px;font-family: Verdana;font-weight: bold;color: white;">N</span></div>
                     </div>
                     <img class="item" src="../image/calender.png" alt="icon-calender" style="margin-top: 64px;">
-                    <img class="item" src="../image/cam_color.png" alt="icon-camera" style="width: 57px;height: 58px;margin-top: 40px;">
+                    <div class="border-cam-pink" style="width: 57px;height: 57px;border: 1px solid #E34D73;background-color: #E34D73;border-radius: 5px;
+                        display: flex;justify-content: center;align-items: center;margin-top: 40px;">
+                        <img src="../image/cam.png" alt="cam-icon" style="filter: brightness(0) invert(1);-webkit-filter: brightness(0) invert(1);">
+                    </div>
                     <img class="item" src="../image/user.png" alt="icon-user" 
-                        style="margin-top: 39px;filter: drop-shadow(0.30em -0.15em 0.03em #2b2b2b);">
+                        style="margin-top: 35px;filter: drop-shadow(0.30em -0.15em 0.03em #2b2b2b);">
                 </div>
                 <div id="below">
                     <img src="../image/avatar.png" width="44" alt="avata">
@@ -282,10 +293,9 @@
                     <h2 style="font-family: Arial, Helvetica, sans-serif;">Meeting tittle</h2>
                     <button style="border-radius: 5px;border: 1px solid red; margin-right: 59px;
                         width: 90px;height: 38px;font-size: 15px;color: red;border-radius: 20px;
-                        display: flex;align-items: center;text-align: center;background-color: white;">
-                            <span style="font-size: 40px">&nbsp;&#8226;&nbsp;
+                        display: flex;align-items: center;text-align: left;background-color: white;">
+                            <span style="font-size: 40px;margin-left: 6px;">&#8226;&nbsp;
                             </span>12:00
-                    </button>
                 </div>
                 <div class="center-date-time">
                     <div class="button-internal"> 
@@ -347,11 +357,13 @@
             <div id="right">
                 <div id="right-title" style="display: flex;justify-content: space-between;align-items: center;">
                     <h2 style="margin-top: 40px;font-family: Arial, Helvetica, sans-serif;margin-left: 13px;">Participants</h2>
-                    <div style="border: 1px solid #FDF2F4;width: 18px;height: 18px;
-                        text-align: center;border-radius: 10px;position: absolute;color: #E34D73;background-color: #f9e9ec;
-                        margin-top: 12px;margin-left: 154px;">4
+                    <div style="border: 1px solid #FDF2F4;width: 18px;height: 22px;display: flex;justify-content: center;align-items: center;
+                        text-align: center;border-radius: 10px;position: absolute;color: #ee0f47a1;background-color: #f9e9ec;
+                        margin-top: 12px;margin-left: 154px;">
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 14px;">4</span> 
                     </div>
-                    <button style="border-radius: 5px;border: 1px solid red; width: 70px;height: 37px;font-size: 15px;color: red;margin-top: 18px;margin-right: 36px;"><span>+ Add</span></button>
+                    <button style="border-radius: 5px;border: 1px solid rgb(208, 83, 83); width: 70px;height: 37px;font-size: 15px;color: red;margin-top: 18px;margin-right: 36px;
+                        background-color: #FFFFFF;"><span>+&nbsp;&nbsp;Add</span></button>
                 </div>
                 <div id="right-4-line">
                     <div class="right-benjamin" style="display: flex;justify-content: left;align-items: center;
@@ -420,23 +432,30 @@
                             <img src="../image/avt3-online.png" alt="Benjamin Crawford-avata">
                             <span style="margin-left: 15px;"><b>Benjamin Crawford</b><span style="font-size: 12px;color: #818586;font-family: Verdana, Geneva, Tahoma, sans-serif;">&ensp;1:12 PM</span></span>
                             <div style="width: 100px;height: 50px;position: absolute;
-                                margin-top: 100px;margin-left: 63px;display: flex;align-items: center;justify-content: center;background-color: rgb(249, 245, 249);">
-                                <span>&#128525;&#128525;&#128525;</span>
+                                margin-top: 100px;margin-left: 50px;display: flex;align-items: center;
+                                justify-content: center;background-color: rgb(243, 236, 243);">
+                                <div class="right_chat_3icon" style=" position: absolute;justify-content: space-between;width: 80px;
+                                             margin-top: -10px;font-size: 14px;display: flex;align-items: center;">
+                                    <i class="em em-smiling_face_with_3_hearts" aria-role="presentation" aria-label="SMILING FACE WITH SMILING EYES AND THREE HEARTS" style="margin-top: 10px;"></i>
+                                    <i class="em em-smiling_face_with_3_hearts" aria-role="presentation" aria-label="SMILING FACE WITH SMILING EYES AND THREE HEARTS" style="margin-top: 10px;"></i>
+                                    <i class="em em-smiling_face_with_3_hearts" aria-role="presentation" aria-label="SMILING FACE WITH SMILING EYES AND THREE HEARTS" style="margin-top: 10px;"></i>
+                                </div>
                             </div>
+
                         </div>
                         <div style="display: flex;justify-content: left;align-items: center;">
                             <img src="../image/avt4-online.png" alt="Christian Scott-avata">
                             <span style="margin-left: 15px;"><b>Christian Scott</b>
                             <div class="chat-bottom">
                                 <input type="text" style="width: 320px;
-                                    height: 38px;position: absolute;margin-top: 20px;border-style: none;
-                                    background-color: #F3F4F6;margin-left: -50px;font-size: 17px;" placeholder="Add..">
-                                    <span style="font-size: 30px;position: absolute;margin-top: 21px;margin-left: 240px;">&#9786;</span>
-                                    <button style="width: 53px;height: 40px;position: absolute;margin-top: 20px;margin-left: 275px;
+                                    height: 38px;position: absolute;margin-top: 12px;border-style: none;
+                                    background-color: #F3F4F6;margin-left: -50px;font-size: 17px;" placeholder="Add Typing ...">
+                                    <span style="font-size: 30px;position: absolute;margin-top: 13px;margin-left: 240px;">&#9787;</span>
+                                    <button style="width: 53px;height: 40px;position: absolute;margin-top: 12px;margin-left: 284px;
                                         border-style: none;">
                                         <img src="../image/send.png" alt="send-button" style="width: 40px;height: 40px;">
                                     </button>
-        
+                                    
                             </div>
                         </div>
                         
