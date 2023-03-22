@@ -8,7 +8,6 @@
     <title>Product Title</title>
     <style>
         #header{
-            /* border: 1px solid black; */
             width: 100%;
             height: 58px;
             display: flex;
@@ -41,6 +40,39 @@
             align-items: center;
             opacity: 0.7;
         }
+        #navigation-center{
+            width: 1300px;
+            height: 140px;
+            position: absolute;
+            margin-top: 320px;
+            margin-left: 130px;
+            font-family: Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        #content-5image{
+            position: absolute;
+            width: 1180px;
+            height: 433px;
+            top: 265px;
+            margin-left: 130px;
+            display: grid;
+            grid-template-columns: 585px 585px;
+            grid-template-rows: 435px;
+            gap: 20px;
+        }
+        .content-img01{
+            width: 588px;
+            height: 433px;
+        }
+        .content-img02{
+            display: grid;
+            grid-template-columns: 280px 280px;
+            grid-template-rows: 210px 210px;
+            row-gap: 15px;
+            column-gap: 20px;
+            
+        }
+
     </style>
 </head>
 <body>
@@ -83,9 +115,37 @@
                     <img src="../image/avta_top_right01.png" alt="" style="width: 36px;height: 36px;">
                 </div>
             </div>
-
         </div>
-    
+        <div id="navigation-center">
+            <div class="navigation-center-text1">
+                <span style="opacity: 0.6;">Home&nbsp;/&nbsp;Category&nbsp;/&nbsp;&nbsp;</span><span style="opacity: 1;">Product title</span>
+                <h1 style="font-size: 52px;font-family:Verdana, , Tahoma, sans-serif;margin-top: 10px;">Product title</h1>
+                <div style="margin-top: -20px;">
+                    <img style="height: 19px;" src="../image/Rating 303.png" alt="">&nbsp;&nbsp;
+                    <span style="margin-top: 1px;position: absolute;"><span><b>4.20</b></span> <span style="opacity: 0.5;">(99 reviews)</span></span>
+                </div>
+                <div style="display: flex;width: 70px;margin-left: 990px;margin-top: -21px;position: absolute;
+                            justify-content: space-around;align-items: center;">
+                    <img src="../image/share.png" alt="" style="width: 14px;height: 14px;opacity: 0.5;">Share
+                </div>
+                <div style="display: flex;width: 70px;margin-left: 1100px;margin-top: -21px;
+                            justify-content: space-around;align-items: center;">
+                    <img src="../image/Heart 23.png" alt="" style="width: 17px;height: 17px;">Save
+                </div>
+            </div>
+        </div>
+        <div id="content-5image">
+            <div class="content-img01">
+                <img src="../image/Image 1705.png" alt="" style="width: 588px;height: 433px;">
+            </div>
+            <div class="content-img02">
+                <img src="../image/Image 1708.png" alt="">
+                <img src="../image/Image 1707.png" alt="">
+                <img src="../image/Image 1706.png" alt="">
+                <img src="../image/Image 1709.png" alt="">
+            </div>
+        </div>
+        
         
     </div>
 </body>
