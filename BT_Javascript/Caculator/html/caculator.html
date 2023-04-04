@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js" integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/cal.js"></script>
+    <title>My Caculator</title>
+</head>
+
+<body>
+    <div id="border">
+        <label class="lbl-title" for="My Caculator">My Caculator</label><br>
+        <input type="text" id="result">
+        <div id="function">
+            <button class="btn" type="button" value="1" onclick="display('1')" onkeydown="myFunction(event)">1</button>
+            <button class="btn" type="button" value="2" onclick="display('2')" onkeydown="myFunction(event)">2</button>
+            <button class="btn" type="button" value="3" onclick="display('3')" onkeydown="myFunction(event)">3</button>
+            <button class="btn" type="button" value="+" onclick="display('+')" onkeydown="myFunction(event)"> + </button>
+            <button class="btn" type="button" value="4 " onclick="display('4')" onkeydown="myFunction(event)">4</button>
+            <button class="btn" type="button " value="5 " onclick="display('5')" onkeydown="myFunction(event)">5</button>
+            <button class="btn" type="button " value="6 " onclick="display('6')" onkeydown="myFunction(event)">6</button>
+            <button class="btn" type="button " value="- " onclick="display('-')" onkeydown="myFunction(event)">-</button>
+            <button class="btn" type="button " value="7 " onclick="display('7')" onkeydown="myFunction(event)">7</button>
+            <button class="btn" type="button " value="8 " onclick="display('8')" onkeydown="myFunction(event)">8</button>
+            <button class="btn" type="button " value="9 " onclick="display('9')" onkeydown="myFunction(event)">9</button>
+            <button class="btn" type="button " value="* " onclick="display('*')" onkeydown="myFunction(event)">*</button>
+            <button class="btn" type="button " value="0 " onclick="display('0')" onkeydown="myFunction(event)">0</button>
+            <button class="btn" type="button " value="C" onclick="clr()">C</button>
+            <!--//onclick="clr()" goi ham xoa trang-->
+            <button class="btn" type="button " value="=" onclick="solve()">=</button>
+            <!--onclick="solve()" goi ham solve-->
+            <button class="btn" type="button " value="/" onclick="display('/')" onkeydown="myFunction(event)">/</button>
+        </div>
+    </div>
+</body>
+
+</html>
