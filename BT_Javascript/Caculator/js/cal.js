@@ -20,7 +20,7 @@
 
  var cal = document.getElementById("function");
  cal.onkeyup = function(event) {
-         if (event.keyCode === 15) {
+         if (event.keyCode === 13) {
              console.log("Enter");
              let x = document.getElementById("result").value
              console.log(x);
