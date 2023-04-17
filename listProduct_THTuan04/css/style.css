@@ -25,6 +25,14 @@
     padding-left: 69px;
     margin-top: 8px;
 }
+.btn-center{
+    padding-left: -30px;
+    margin-top: 8px;
+    width: 140px;
+    height: 70px;
+    border-style: none;
+    background-color: #ffffff;
+}
 
 #background {
     background-image: url("../Images/img01.png");
@@ -50,6 +58,8 @@
     color: rgb(234, 233, 231);
     opacity: 1;
 }
+
+
 
 .leftitem {
     color: #82868E;
