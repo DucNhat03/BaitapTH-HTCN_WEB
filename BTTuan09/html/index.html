@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Demo</title>
+</head>
+
+<body>
+    <!-- <h2>Hiển thị 1 mảng object</h2>
+    <p id="demo"></p>
+    <script>
+        const person = [{
+            firstName: "Nguyễn Đức",
+            lastName: "Nhật",
+            age: 20
+        }, {
+            firstName: "Nguyễn Quốc",
+            lastName: "Bình",
+            age: 20
+        }, {
+            firstName: "Nguyễn Quốc",
+            lastName: "Khiêm",
+            age: 20
+        }, {
+            firstName: "Nguyễn Quốc",
+            lastName: "Đạt",
+            age: 20
+        }]
+        let txt = "";
+        person.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value, index, array) {
+            txt += value.firstName + " " + value.lastName + ", " + value.age + "<br>";
+        }
+    </script> -->
+    <hr>
+    <p id="demo0"></p>
+    <!--Table-->
+    <table id="myTable">
+        <tr>
+            <td class="name">FullName</td>
+            <td class="age">Age</td>
+        </tr>
+    </table>
+    <button class="btn-addperson" type="button" onclick="myFunction()">Add person</button>
+    <script>
+        // const person = {
+        //     fullName: "Nguyễn Đức Nhật",
+        //     age: 20,
+        // };
+        // document.getElementById("demo").innerHTML = Object.values(person);
+
+        function myFunction() {
+            const people = [{
+                fullName: "Nguyễn Đức Huy",
+                age: 20
+            }, {
+                fullName: "Nguyễn Đức Vương",
+                age: 20
+            }]
+
+            var table = document.getElementById("myTable");
+            for (var i = 0; i < people.length; i++) {
+                var person = people[i]
+                var row = table.insertRow(1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = person.fullName
+                cell2.innerHTML = person.age
+            }
+
+        }
+    </script>
+</body>
+
+</html>

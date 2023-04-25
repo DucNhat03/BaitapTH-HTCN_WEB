@@ -1,0 +1,22 @@
+table,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    /* background-color: antiquewhite; */
+}
+
+.btn-addperson {
+    margin-top: 10px;
+    background-color: rgb(243, 56, 56);
+    border: 1 px solid rgb(243, 56, 56);
+    border-radius: 7px;
+    color: lavenderblush;
+    width: 100px;
+    height: 40px;
+}
