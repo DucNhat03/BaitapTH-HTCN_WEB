@@ -11,3 +11,10 @@ body{
 .navbar-brand{
     font-size: 16px;
 }
+.modal-body-note{
+    color: rgba(244, 2, 2, 0.857);
+}
+.modal-content{
+    width: 500px;
+}
+
