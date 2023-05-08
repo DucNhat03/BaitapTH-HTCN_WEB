@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
     <title>My StopWatch</title>
 </head>
 <body>
+    <h1 id="title">StopWatch</h1>
     <div id="boder">
-        <!-- <input class="input" type="text" placeholder="00:00"> -->
         <div class="input">
-            <span class="minutes">00 :</span>
-            <span class="seconds">&nbsp;00 . </span>
-            <span class="miliseconds">&nbsp;000</span>
+            <span id="hours">00</span><span>:</span>
+            <span id="minutes">00</span><span>:</span>
+            <span id="seconds">00</span><span>:</span>
+            <span id="miliseconds">00</span>
         </div>
-        <button class="button" type="submit" value="Reset">Reset</button>
-        <button class="button" type="submit" value="Reset">Start</button>
+        <div id="container-btn">
+            <button id="start" class="button" type="submit" onclick="startStop()">Start</button>
+            <button class="button" type="submit" onclick="reset()">Reset</button>
+        </div>
     </div>
-    <div>
-        
-    </div>
+
 </body>
 </html>
