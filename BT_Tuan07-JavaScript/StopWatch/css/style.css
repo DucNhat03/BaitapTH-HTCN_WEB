@@ -1,11 +1,20 @@
 body{
     margin: 0;
 }
+#title{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 307px;
+    border-radius: 5px;
+    width: 160px;
+    border: 1px solid antiquewhite;
+    background-color: antiquewhite;
+}
 #boder{
     border: 3px groove rgb(0, 0, 0);
     width: 400px;
     height: 150px;
-    background-color: rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(rgb(246, 214, 214),rgb(249, 254, 208));
     position: relative;
     top: 100px;
     left: 20%;
@@ -27,7 +36,29 @@ body{
 }
 .button{
     width: 100px;
-    height: 30px;
-    background-color: rgb(200, 200, 200);
+    height: 40px;
+    background-color: rgba(10, 67, 255, 0.976);
+    border: 5px double rgb(255, 255, 255);
+    border-radius: 5px;
     font-weight: bold;
+    margin-left: 20px;
+    color: #f6f6f6;
+    font-size: 17px;
+}
+#hours{
+    color: red;
+}
+#minutes{
+    color: yellow;
+}
+#seconds{
+    color: blue;
+}
+#container-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    position: absolute;
+    margin-top: 80px;
+    width: 378px;
 }
